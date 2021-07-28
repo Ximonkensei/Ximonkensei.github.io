@@ -1,0 +1,1630 @@
+<!DOCTYPE html> 
+<html>   
+ <head>     
+  <meta charset="utf-8">     
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">     
+  <meta name="viewport" content="width=device-width, initial-scale=1">     
+  <title>自詩</title>     
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.css">
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.min.css">
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap-reboot.css">
+   <link rel="stylesheet" type="text/css" href="./css/bootstrap-reboot.min.css">
+   <script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+   <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+   <script type="text/javascript" src="./js/bootstrap.js"></script>
+   <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+<!--自己寫的-->
+   <link rel="stylesheet" type="text/css" href="./css/style.css">
+   
+
+ </head>   
+ <body>     
+ 
+  
+<!--這是一個浮動搜尋器-->
+
+<div id="fixed">  
+<button onclick="onoff()" class="dropbtn">搜尋器</button>
+
+<div id='container' style='display:none'>
+	<div style="float:left;">
+		<input type="text" class="input" id="NameInput" onkeyup="TextSearch()" placeholder="文本搜尋"><br><br>
+	</div>
+
+	<div style="float:left;">
+		<input type="text" class="input"  id="TagInput1" onkeyup="TagSearch()" placeholder="標籤1" ><br>
+		<input type="text" class="input"  id="TagInput2" onkeyup="TagSearch()" placeholder="標籤2"><br>
+		<input type="text" class="input"  id="TagInput3" onkeyup="TagSearch()" placeholder="標籤3"><br>
+	</div>
+  </div>
+</div>
+<!--這是一個浮動搜尋器-->
+<br>
+<br>
+
+
+
+<!--cellspacing="0" cellpadding="0" -->
+<div class="container table-responsive">
+
+
+<!--這裡是表格-->
+<table class="table table-hover small "  id='mytable'>
+
+<thead>
+       <tr>
+         <th>信息</th>
+         <th>Tag</th>
+      </tr>
+ </thead>
+
+<tr>
+    <td data-th="信息"></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息"></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">那隻住在蘇聯的長頸鹿，問著自己要長的多高，才能飛出這片寒冷沉默的土地上望見一整片星河，在真空中泅泳。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#蘇聯</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">一款老線上遊戲即將要結束營運了，你很傷心。然而當你決定回去重玩，緬懷青春的時候，你會更傷心，因為你一上線就遇到一堆掛。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#外掛</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">夜裡的路燈是否開放著花朵，為什麼點點的燈火像是花瓣無聲的墜落。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#夜</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">我們的存在是一個壓縮演算法，嘗試把我們接觸每一個人容納其中，然後變得破碎。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#演算法</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">唐吉訶德曾經戰勝過巨人，但在這個時代巨人已經成為了神話，於是人們嘲笑他，說他口中的巨人只是風車。但唐吉訶德知道，他曾經駕駛過戰馬，穿著過鎧甲，做為英雄而流血，即使人們只渴望從垂老的他口中聽見笑話和謊言，他仍能夢見自己成為騎士的樣貌。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#唐吉訶德</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">
+「為什沒有人關心我！」<br>
+「可能是因為你沒有打開你的80PORT的緣故。」</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#好友</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">當你還是個孩子的時候，你看見一整排的扭蛋機，你對媽媽說，我要玩！她說不行，家裡很多了，只能選一個。於是你投下了銅板，匡啦！掉出了一顆地球，你說好美，我要把它掛在宇宙上，讓它永遠永遠的旋轉。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#扭蛋</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">我在就業服務處上班，我問他們想要什麼工作，其中一個說：「我想要在城市的下水道去獵殺鱷魚。」另一個說：「我想要在一整片的麥田裡做守望者，防止無知的孩子在懸崖邊掉落。」真是不切實際的工作，他們想要的，我又何嘗不想去做呢？</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#工作</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">你買下了全世界的書，並蓋了全世界最大的圖書館，但你卻放棄了杜威十進位分類法，因為你說每一本書都是平等的，所以將他們錯放不同的地方，一百年過去了，那間圖書館變成了迷宮，人們花費數十年的時間在那裏尋找一本書，然後再花更多年的時間尋找自己。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#圖書館</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">你之所以會去投票的理由，是因為那是你活到現在，少數可以自己做決定的事情。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#投票</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">你在當兵的時候寄了一萬封情書給女友，於是女友最後愛上了郵差，但女友並不知道的是，你那一萬封情書真正希望收件的人其實也是那個郵差。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">你摺起了時間的紙，於是你把自己摺疊在ㄧ億四千萬年前。然後你又摺了好幾次，宇宙於是變成了一隻貓，任由著牠對其他的世界玩耍。最後你攤開它，只是放錯方向，於是我們的時間相反了過來，我們返回子宮，回溯到文藝復興，火焰停止燃燒，最後陷入長眠。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#貓</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#時間</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">你聽說在泰國有一百萬頭大象，一千萬尊神佛，還有七千萬的人口。而你還聽說這每一條馬路都有忙碌的車流，他們的靈魂飛行在曼谷的夜空，任由巨大的環狀道路帶他們輪迴、循環、轉世、飛昇、成佛，盼望尋找出口。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#泰國</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">你致力於成為一名黑帽駭客，每天研究駭客攻防和破解的藝術，終於有一天你總算成功一大半，因為你的女朋友讓你當上了綠帽駭客。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#駭客</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">我們同月球人戰爭後，佔據了他們的星球，於是我們開採那片月地做混凝土，於是我們的世界全都變的像是月球上的建築物。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#月亮</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">在這個國家，所謂民主和自由，並不是少數服從多數，人們投票選出最低票數候選人去執行政策，於是所有人都努力表現自己，所有的人都努力與大多數人不同，於是我們總是推翻選出的總統，然後殺害自己革命的同盟，最後再被拉下寶座，總統府每天放著煙火、火箭炮還有坦克車隆隆移動。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#自由</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#民主</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">戴著眼鏡的溥儀，搭乘著亞細亞號的特快列車往窗外凝視，他是否看得見滿州國的風的顏色，能不能告訴別人松花江的水是否會往天上流，他又是否能夠看見這片往天上奔騰的國土正在迎向墜落。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#滿州國</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">寫了本小說，沒有人看的懂，於是你加了註釋，十年後，編者又加上註釋的註釋，百年後，學者加上註釋的註釋的註釋，於是再也沒有人看過小說的原來的樣貌。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#註釋</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#寫作</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">我們國家終於廢除死刑了，因為我們發現比死刑更有效而且還可怕的刑罰，我們強迫每個犯人每天寫十二小時的程式語言。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#死刑</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#程式語言</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">妳之所以會去買一瓶可口可樂纖維+，並不是因為妳想要0熱量高纖維，而是因為它感覺比較健康。就和妳為了減肥去麥當勞買了一號餐然後加點生菜沙拉是一樣的概念。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#減肥</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">你想去辦件公務的事，於是你去當地的公務機關。那負責的長官說：「不好意思，請你找我的秘書。」秘書說：「不好意思，請你找我的助理。」助理說：「請你找我的辦事員。」那辦事員說：「請你找下面的工讀生。」工讀生說：「請找我們最上面的長官。」</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#官僚主義</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">塞萬提斯來到中國了，那明朝的萬曆皇帝說，他對唐吉訶德手不釋卷，承諾給他一官半職，塞萬提斯騎著馬，一路奔波，度過無數星辰，垂垂老矣，終於他要晉見北京城的天子，而那綁著辮子的皇上卻對他說，唉呀，旅人啊，你追逐的夢，早已經隨著你筆下的那個風車騎士，陷入永久的長眠啦。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#西班牙</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#唐吉訶德</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">驗證碼說：「請你從圖中選出一隻鹿。」，你問說：「這明明是一隻馬啊。」驗證碼回應：「那你怎麼知道牠是馬而不是鹿。」你說：「如果我不知道牠是馬，那又如何選出鹿？」接著，一直監視你的祕密警察跳了出來。警察說：「不好意思，我們國家不需要太誠實，請你跟我走上一趟吧。」</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#驗證碼</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">你的羊逃到小徑去了，於是你去找牠，你發現小徑變成了岔路，於是你分成不同的自己去尋找，然後你又看到更多的岔路，然後你繼續分成更多自己去尋找。找到最後你什麼也沒找到，你卻在不知道什麼時候變成了羊，你的主人仍在尋找你。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#羊</a><br>
+	</td>
+</tr>
+
+
+
+
+<tr>
+    <td data-th="信息">如果我們愛一個人是愛上對方的善良和美好，那你怎麼還會沒有對象。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">太后在紫禁城裝了一台夾娃娃機，三不五時就推起搖桿，抓起了一窩子的太監，笑呵呵地。大清滅亡後，這夾娃娃機成了極權的象徵，流散到民間裡，南方人拿它來釣魚，抓起一網子的魚，笑嘻嘻地。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#夾娃娃機</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">母親帶我去了南京的玩具店，我看見了櫥窗裡一個芭蕾女伶的音樂盒，甚是想要。後來我自己跑來，終於起心動念偷了它，可是那個音樂盒自己放起了聲音，嚇得讓我摔碎了它一地，被玩具店的老爺爺逮正著，然後他把我換上了芭蕾舞裝，裝在音樂盒上，於是我被迫在那櫥窗裡，永遠的跳舞。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#芭蕾舞</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">那個執大夜班的超商店員，努力的點亮著那裝在自己顏面上的燈，好讓宇宙不至於熄滅。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">有時候你希望那一台放在太空船上的收音機，可以永遠播放你喜歡的歌曲，這樣你在路過冥王星的時候，不至於馬上想起太陽系外的孤寂。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	</td>
+</tr>
+
+
+
+<tr>
+    <td data-th="信息">你在宇宙紀元搭乘太空船，想要為故鄉尋找永不凋謝的花。你橫跨無數的星系，面對隕石與流星雨，和宇宙海賊戰爭，看見魟魚拖著彩虹飛越暗夜無星，聽過了行星的歌唱，但你仍然沒有找到那朵花。終於你回到故鄉，在你死去的瞬間，人們在你屍體的心臟上，看到一朵紅色的花，緩緩綻放。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	</td>
+</tr>
+
+
+
+<tr>
+    <td data-th="信息">你找外星人的女孩子聊天，跨星際網路的傳輸速度會延遲個一分鐘，你想，這就是為什麼她們總是對你已讀不回的緣故。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#外星人</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">大清帝國發射了一顆人造衛星，想為那些飛出地球的太空船，在宇宙上投射皇上的龍顏，只是一隻藏在衛星裡頭的老鼠，咬斷了投射裝置的電線，所以那顆衛星就變成了老鼠的家園。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">你失憶了，不知道自己是什麼人。於是你去找人，詢問，他們說你很善良，他們說你很努力，但你卻無法相信他們，只因為你太孤獨，只剩下你自己認識自己，在記憶裡你死了，就什麼都沒有留下了。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#記憶</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">市長候選人為了親民形象做起了外送，送到客人家中後，便問起對政策有何不滿。<br>
+『外送速度可以更快就好。』<br>『我會改善交通。』<br>『為什麼沒有筷子！』<br>『我會修改店家環保方案。』<br>『飲料打翻了。』<br>『我要實行路平政策。』<br>『不，要改善的只有你的外送能力而已。』</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#外送員</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">如果大清的孩子們不能擁有夢想，為何他們要在他們的旗子上織著一隻龍追逐太陽。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">海貓可曾想飛回到牠們月球上的故鄉，在寧靜海的戰爭之後。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#月亮</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">你在戀愛的時候太過認真，以致於總是把對方看成一個世界的形狀。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">有沒有可能某個神明因為鼻塞的緣故，不小心擤出了一整片銀河。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#銀河</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">躺在病床上的她這麼說：「如果我變成植物人，請把我的身體做成書本。」</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#書</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">你架起一把達達主義的機關槍，朝著虛無的城市達達達達達達達。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#城市</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#達達主義</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">你洗著手，洗出好多泡沫，泡沫變成金魚，你想撈起金魚，金魚卻愈洗愈多，在你雙手變成湖泊。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#金魚</a><br>
+	</td>
+</tr>
+
+<tr>
+    <td data-th="信息">你太努力工作，以至於在夜晚被月光給曬傷。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#工作</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#月亮</a><br>
+	</td>
+</tr>
+
+
+<tr>
+    <td data-th="信息">很多女孩子們其實都是善良的小偷，她們輕易偷走了你的心，而當你想要索求自己的心的時候，她們又毫不猶豫地還給你。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#偷心</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+</tr>
+
+　
+
+<tr>
+    <td data-th="信息">你趴在桌子上午睡，有時候睡得太沉，不小心把手臂壓出了雜訊，好像你的手臂泡在電子信息，咻咻地迫不及待想要飛出去。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#睡</a><br>
+	</td>
+</tr>
+
+
+
+
+<tr>
+    <td data-th="信息">起初上帝造了一個白人。差遣他去做外送員，白人在豔陽下騎了七天的車，被烤成了麵包色，變成了黃人。他又在豔陽下騎了七十七天，被烤成了血紅色，變成了紅人。他又在豔陽下騎了七百七十七天，被烤成了黑葡萄色，變成了黑人。這就是人類的起源了。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#外送員</a><br>
+	</td>
+
+</tr>
+
+
+
+<tr>
+    <td data-th="信息">北洋水師戰敗後，那顆大清製造的水雷順著鯨魚飛行的路徑漂著，最後漂得太遠一不小心就漂上天河，和成群的星斗一起成為星座。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	</td>
+
+</tr>
+
+  <tr>
+    <td data-th="信息">我們尚未製造出時間機器，卻總是在幻想著早知如此當初怎樣做就好了。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#時光機</a>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">如果寫一首詩是努力讓人完全看不懂，那麼為什麼不去寫程式碼。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#程式</a>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">下雨了，你就突然想要出去跑步。停電了，你就突然想要用功讀書。而殭屍瘟疫爆發了，你就突然想出國。而當你終於變成殭屍，你就開始想當人類了。</td>
+	<td data-th="Tag"><a class="btn" onclick="btn(this.innerHTML)">#新冠病毒</a>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">我在臺南開了一座帽子工廠，專門為日本的文人生產巴拿馬帽。只是後來布爾東在法國發表了超現實主義宣言，我的帽子頓時變成怪物，專門吃掉人們的腦袋，後來我只好將這些瘋狂的帽子關進工廠，每天夜晚聽到它們用日語呢喃著時鐘、星座以及城市的廢墟。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#巴拿馬帽</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#日治時代</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#超現實主義</a>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">我失業，去公園，拿麵包屑餵鴿子。這時候一隻羊走了過來，帶來一大包棉花糖來要我吃，我開心的吃下去，然後我全身突然長出了像雲朵般的羊毛。然後一個老人出現，看到我說：『哎呀，總算找到你了！』把我扔上卡車載往牧場，我想：『至少我有工作做了。』</td>
+	<td data-th="Tag"><a class="btn" onclick="btn(this.innerHTML)">#羊</a>
+	</td>
+  </tr>
+
+   <tr>
+    <td data-th="信息">兩隻魚，閃閃發亮的魚，在刺眼的天空上，像鰈一樣，相愛、跳舞、飛行。但你說牠們其實是鬥魚，牠們其實在廝殺，傷害彼此的鱗片、撕裂了尾鰭、那些流出來的血化為了虹霓，掉落下來變成九月雨。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#魚</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#九月雨</a>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">宣統一百年，大清帝國開始焚燒科幻小說，那名負責的官員這麼說：『我們的國家已經富了，不再需要那些幻想故事了。』</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">我那隻在月亮上的馬跑得太快，害我總是為了追趕牠而錯過在寧靜海的野餐。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#月亮</a>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">時鐘人在鐵塔上飛行，在陽光照射之處為地面上的人形成日晷之影。時鐘人很傷心，為何沒有人相信時鐘可以做得比日晷更好，於是他在鐵塔上了吊，繞在鐵塔上面不停迴轉，一瞬間陽光照了時鐘人的影子，日晷一下子過了好幾百日，人人也瞬間老去。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#時間</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#鐵塔</a>
+	</td>
+  </tr>
+
+
+
+  <tr>
+    <td data-th="信息">妳穿越到了康熙執政末期的清朝，想要用妳優秀的歷史知識展開宮鬥，然後當妳入了宮，才發覺所有宮女和娘娘都是未來人，這下子遊戲很公平了。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#穿越</a>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">買了一大瓶墨水，在瓶底飼一隻魚，每天毛筆沾一點墨，習字。只是你的左手總是打翻了墨水，嘩啦，整張宣紙變成水族箱。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#魚</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#墨</a>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">我將給你祝福，你的夢想會在二月三十日那天實現。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#祝福</a>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">兩條鼻的象走進夢外，用長長而蜿蜒的鼻，吸吮你的夢。而另一條鼻，溜了進來，呼嚕呼嚕地灌注你，不曾懷念的事情，像大象的靈魂一般。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#夢</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#象</a>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">贛巨人總是在笑，他笑的時候人們就跑，後來他變成了哭，人們一樣就跑。後來贛巨人離開了，人們才回來，卻不明白為何贛巨人要跑。<!--《山海經‧海內經》：南方有贑巨人，人面長脣，黑身有毛，反踵，見人則笑，唇蔽其目，因可逃也。--></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">你曾在街機房投幣了一次又一次，那台你永遠過不了關的機台是時光機器，帶你穿越時間一次又一次。而當你真的來到未來，那街機房早已消逝，不再有五光十色的光影和吵雜的音效，時光機器被永遠關閉，拔掉了電線，你才察覺自己永遠無法回到從前。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#時光機</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">在我們的城市有一顆巨大的導彈，每一天我們都在演習如何發射它。而我們也知道，在敵人的城市，也同樣有個導彈，也做一樣的演習，同樣準備發射它。我們是如此相似，也是如此仇恨著。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#城市</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#飛彈</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">為什麼驗證碼不能勾選我不是人類。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#機器人</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#驗證碼</a><br>	
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">因為我們太害怕雨水，於是我們制定了新的法律，規定天空不准在有人沒撐傘的時候落淚。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#雨水</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#傘</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">我們在城市裡製造海豚，卻忘了為牠們裝上火箭，於是當牠們在試圖升空的時候一一墜落，嘩啦嘩啦地掉進海裡。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#城市</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#銀河便車指南</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">窗口的風冷冷吹著，你的時間跳舞著，月亮在飛行著，地球在旋轉著，那些海豚尚未升空，而你也未墜落於火箭中，他們還未對你說：『謝謝，你們的魚。』而你尚未成為花朵和塑膠袋，在世界終止前，你安裝了自己，思索，愛的答案是多少的有理數。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#城市</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#銀河便車指南</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">由於反清復明長年失敗的緣故，天地會的夥伴們在海外組了個地下樂團，每天用死腔大吼：『我去你的愛新覺羅！』，出乎意料很受歡迎，有一千萬的點閱率。清廷變法成功後，這些人突然又穿上筆挺的長袍馬褂，去競選議會代表，高票當選。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#天地會</a><br>	
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">努力加油，這波口罩熱潮可能是你人生最好的時候，畢竟這也是別人唯一看不見你的外表的時候。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#新冠病毒</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">『我想跟你談論普魯斯特的追憶似水年華。』我這麼對魚缸裡的草金魚說。牠思考了一下，回答：『不行，我只想說江南紡織業崩潰的主因。』然後順便撞了一下魚缸。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#普魯斯特</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#魚</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">你聽說在雨之國，他們的詩人有一千種形容雨的單字，這是身處在晴之國的我們，永遠無法翻譯他們的悲傷的緣故。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#雨</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#翻譯</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#OO之國</a><br>
+	</td>
+  </tr>
+
+   <tr>
+    <td data-th="信息">為了延長你的年假，你決定謊稱自己去了武漢。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#新冠病毒</a>
+  </tr>
+
+   <tr>
+    <td data-th="信息">學習鍊金術的這天，我在夜晚的油燈下開始研讀牛頓的書，這時候書中跳出了一隻蠑螈說：『別傻了，讀這東西沒用的！』我氣惱地想把它扔到火爐裡，可是卻連整本書一起丟進去，蠑螈在火焰中笑著：『獃子！哈哈。』</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#鍊金術</a>
+	</td>
+  </tr>
+
+
+
+   <tr>
+    <td data-th="信息">一個自戀的人能否因為雙重人格找到愛情。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#雙重人格</a>
+	</td>
+  </tr>
+
+   <tr>
+    <td data-th="信息">有沒有可能宇宙是一台唱片機，每顆星星都在隨著音樂旋轉。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#星星</a><br>
+	</td>
+  </tr>
+
+   <tr>
+    <td data-th="信息">你聽說外頭殭屍病毒肆虐，但你是個尼特族，繭居在家中，你的時間是房間的時間。數個月後，大多數人死去，你成為最後一個人類，孑然一身，但你想想，這跟你以前的生活沒什麼兩樣。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#新冠病毒</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#尼特族</a><br>
+	</td>
+  </tr>
+
+
+   <tr>
+    <td data-th="信息">學會了世界語，但你的世界只有你自己。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#翻譯</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#世界語</a><br>
+	</td>
+  </tr>
+
+   <tr>
+    <td data-th="信息">你的身上塗抹了太多彩虹，以至於你的擁抱總被人以為那是有所意圖的顏色。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#彩虹</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">自從借書會付錢給原作者後，一些陌生的面孔明顯變多了。圖書館員說：『你這個月第好幾次借這位作者的書了，你該不會是原作者吧。』那個人反駁：『不，我是他的競爭對手，讓他的書沒人借得到。』。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#圖書館</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">為了檢舉那個邊騎車邊滑手機的人，你也在騎車的時候拿出手機拍照。很多時候，其實只有相似的人才會互相傷害的。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#機車</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">有時候你很想開間動物園，然後把政治人物放進去裡面。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#動物園</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#政客</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">看了推理小說的你，決心實行完美密室殺人，後來你把刀子刺進自己你的心臟，因為你的心就是就是最密不透風的密室。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#推理</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#密室</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">在我們這個時代，想要逃離網路，比逃離地球還要困難。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#網路</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">你的主管罵你：「你連這都不懂！怎麼還活著！」於是你問他，銀河系從何時誕生、巴比倫圖書館在何處、世界每天新生的次數、中國幻想生物的分類法。他呆住：「你問這做啥？」你連這都不知道，還是可以活得好好的不是嗎？</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#圖書館</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">有時候，你把你的生日記錄隱藏，並不是因為你厭倦了朋友們的生日快樂，而是因為你希望有誰可以真的記住那個日期。(但是通常沒有)</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#生日</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">你太傷心，喝進肚子裡的水最後都變成眼淚。而那些勞動的人卻痛罵，你怎麼不像我們一樣，努力讓喝下的東西變成汗水。他們以為只有他們經歷苦難，而你未曾努力。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#淚水</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">玩躲貓貓，你當鬼，可抓不到任何人，於是沒人想要跟你玩。你不甘心，你說，你會躲，大家重新玩，躲起來，於是再也沒有人找到你。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#躲貓貓</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">與其把詩集印在衛生紙上，還不如印上你討厭的政治人物。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#政客</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#衛生紙</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">家裡附近的自動販賣機對我告白，它對我說：『你是唯一願意對我投錢買飲料的人。』但我感到悲傷，因為我其實戀愛著火車站那台販賣機，但我始終沒有去火車站，那裡離我太遠，而我也永遠不會是在那唯一投錢的人。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#投幣式</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">有時候你很在乎的人並不那麼在乎你，不信的話可以試試看解除對方好友，也許他過了十年都沒有發現。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#好友</a><br>
+	</td>
+  </tr>
+
+
+
+  <tr>
+    <td data-th="信息">韓愈寫了一篇名為『獲麟解』的攻略書，期望著當今那些寶可夢大師，為皇上抓住那隻金色的獨角獸，但後來他們只帶來了揚子江的龍、天方國的鳳凰、北海的角鯨。傷心的韓愈於是頭上長出了角，全身冒出金色的鱗片，燃起了火花，往不知處去了。<!--麟之為靈，昭昭也，詠於《詩》，書於《春秋》，雜出於傳記百家之書。雖婦人小子，皆知其為祥也。然麟之為物，不畜於家，不恆有於天下。其為形也不類，非若馬牛犬豕豺狼麋鹿然。然則，雖有麟，不可知其為麟也，角者，吾知其為牛；鬛者，吾知其為馬；犬豕豺狼麋鹿，吾知其為犬豕豺狼麋鹿；惟麟也不可知。不可知，則其謂之不祥也亦宜。雖然，麟之出，必有聖人在乎位，麟為聖人出也。聖人者必知麟，麟之果不為不祥也。又曰：麟之所以為麟者，以德不以形。若麟之出不待聖人，則謂之不祥也亦宜。--></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#寶可夢</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">你在宇宙的牧場上種植著星星，為他們澆上月水，盼著它們長大，只是有時候你不小心淋了一下太陽的火花，於是它們像是沖天炮，咻，飛破闃黑的夜空，任地球上的孩子許下太多的願望。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#星星</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#月亮</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">對你發出交友邀請的女孩子，大頭照很可愛，可是她們都是詐騙集團。你發出交友邀請的女孩子也很可愛，可是對她們而言，你甚至不如詐騙集團。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#好友</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">為了翻譯紅樓夢，你掉進了書中的大觀園，在那裡無數男女存在於平行的鏡面中，反射出無限的萬花筒，只是你在這漫長夢境中，打翻了蠟燭，不巧在頁上燒出了洞，瞧，女媧正拿起了靈石，補上那最後的窟窿。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#紅樓夢</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#翻譯</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">工人離開了里昂的盧米埃爾工廠，他們沒有聲音，無法談論波特萊爾、馬車和遙遠東方的戰場，他們沒有顏色，失去了光，他們在機器的四十六秒中循環記憶，然後被自己淡忘。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#電影</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#法國</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">你想要做的工作，往往不會被寫在人力銀行職業欄裡面。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#人力銀行</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#職業</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">你和你討厭的人過世了，一起上了天堂，現在你們都開始覺得這裡像是地獄了。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#天堂</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#地獄</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">柏拉圖把詩人驅逐出理想國後，於是他們只好去陶淵明的桃花源排隊。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#理想國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#希臘</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">你的臉書朋友正在動態上憂鬱哀傷，於是你和其他人去問他怎麼了，他沉默，沒有回答。直到一個正妹問了他，他像是點了煙火霹靂啪啦。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#好友</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#煙火</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">住在電視之國，每天在街頭被過剩浮動的電子廣告給淹沒，當你從學校畢業，老師們砍掉了你的腦袋，裝上了電視螢幕，每天播放你的演出，你的價值就在於你能用頭上這個玩意贏得多少的注視和瀏覽人數。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#OO之國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#電視</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#廣告</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">滿洲國那條順著長白山延伸上去的銀河鐵道，尚未有孩子看見拉著亞細亞號的麒麟，以及乘坐在車上的孔子和昭和天皇。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#滿州國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#日本</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">午夜，一條無人馬路上，閃爍光線的斑馬，在煙火以及抹香鯨的呼吸間，墜落在影子裡，變成星座。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#馬路</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#煙火</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#超現實主義</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">蘇聯解體的那一天，你去了趟拜科努爾想要買一艘太空船，成交以後，你問宇航員說：「為什麼你們不再前往宇宙？」他如此回答：「已經習慣我們的我們，再也無法忍受太空中的寂寞。」</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#蘇聯</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">如果你的房間是一艘方舟，也許你會乘著它去旅行，但你不會下船，因為外面的人說著不一樣的語言，不管是在異地還是在這裡。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#尼特族</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">一千萬年後，文明早已被電磁脈衝給摧毀，人們也遺忘了文字，於是為了尋找知識，我們派出半盲的尋書人打著油燈，當他們找到書本的時候，他們在上面點火，試圖在燃燒的烈火裡看見一點智慧的殘光。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#書</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">清朝終於在整個大陸鋪設好金色的光纖網路了，全朝開放網路的那天，搜尋引擎飆升第一名關鍵字是：『揚州十日記 下載』。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#網路</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">清朝人終於成功發明了時間機器，只是為了防止人民前往觀看揚州十日的真相，他們不得不對大清律例立法禁止穿越時空到三百年以前。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#時光機</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">一百年後，當客家人移民到了火星，他們祭拜艾斯克雷爾斯山、帕弗尼斯山和阿爾西亞山做全新的三山國王。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#火星</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#客家人</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">你租了一台夾娃娃機，一個月三千元，然後在裡面放著自己寫過的小說書籍，只是你的文字太過脆弱，被夾子碰一下就落淚，以至於裡面終於淹了水，變成了水族箱，看，書頁像魚拍著翅翼，飛行。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#魚</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#夾娃娃機</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">十年後，一位影評人如此評價一部好電影：「這真是我看過最好的作品！從頭到尾我都沒快轉過一次。」</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#電影</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">為了尋找外星人，欽天監在大清製造的太空船上拉起長長的黃龍旗，並用廣播系統放起鞏金甌，只是他們忘記太空中沒有聲音，而太空船又飛地太快，那美麗的黃龍旗於是掉下來，至今它仍在宇宙中的某處跳舞著，像是一條真正的龍一樣。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">你因為犯了自殺罪，於是在這個國家被宣判死刑。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#OO之國</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">當我用力揉眼睛的時候，總是害怕眼球會被眼淚沖下來。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#淚</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">買了一只盆栽的耳朵，想在她開花的時候為她唱歌，只是當我帶她回家的時候，不小心經過了熱鬧的超級市場，於是當她開了花，她選擇變成巨大的天線，只接受世界的歌聲。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#盆栽</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#耳朵</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#天線</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">當宇宙變成了一個黑洞，我會在裡面建造了一座旋轉木馬，以至於當重力拉長時間的時候，我會念下咒語，讓我永遠在裡面旋轉。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#旋轉木馬</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">機器人創作文學的時候，他們從不動筆或打字，他們不依賴任何外部儲存，他們把寫的書存放在他們的正子腦裡，時而增加行段，在邏輯中尋求詩意，當他們寫出偉大的作品，他們會將自己開源，像是本私小說，細膩悠長而自溺。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#機器人</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">宋朝滅亡的那天，蒙古人為每一個漢人進行重新編程，他們讓每一個姓氏都設了一個變數，為他們安排應執行的函數，但是後來朱氏=８８脫離了母體，手指日月，有了意識，人們於是也突然想起了自己不是變數，推翻了元朝，然後來到新的時代，繼續舊的函數運作。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#程式</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">宣統一百年的那天，商人喊著：『換皇帝啊！』人民議會想著這皇上是該換了，公公們於是替皇上換了漂亮的辮子，齒輪的心臟，水晶的血管，火紅的眼鏡，還有金色的身體。但不久後皇上的身體生了鏽，流出鑽石色的血，齒輪停轉，不再動彈，人們大喊騙人啊！對那說換皇帝的商人追著打。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">你搭乘時光機回到過去，想要完成你那學生時代對暗戀對象未說出口的告白，當你終於在無止盡的猶豫中開口後，她卻回答:『不好意思，請問你是誰？』</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#時光機</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">我在通勤之國準備要上班，整個城市像捷運一樣搬運著我們，運送到另一個場所，周而復始，誤以為我們正在前進著。然而移動的是整個世界，旋轉的是整個宇宙，我們在循環的日子裡，永久靜止。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#OO之國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#城市</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">夢在你睡眠裡，沉默地排著隊。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#夢</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">『你說你想要在這個自由民主寬容的社會上體驗專制獨裁被奴役的感覺？』『是的？我該怎麼做。』『那你怎麼不去上班呢？』</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#上班</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">你去圖書館，問喬伊斯的小說放在那裡，圖書館員說在八號走道的英語文學區，這時斯威夫特、王爾德、葉慈搭乘H.G.威爾斯的維多利亞風格時光機跳了出來：『我們是愛爾蘭人！』圖書館員說：『可你們沒有愛爾蘭文作品啊！』於是他們摸摸鼻子走了。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#愛爾蘭</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#英國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#圖書館</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">我去貝加爾湖進了一隻北冥魚，希望把牠養成一隻鳥。一個北京人笑我，這啥呢，你這養法錯了！從來只有在北方可以把魚養成鳥的，你在南方只能把鳥養成魚的！我偏不信，我偏這麼幹來著，只是後來那魚從來沒有長大，我就只好去黃埔江放生了牠。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">馬嘎爾尼上了京城來找我，送了艘戰艦，問我要不要開放通商，我卻說談這幹啥來著，你何不跟我搭這船下江南，抓抓寶可夢呢？於是他頭也不回走了，我想這洋人真沒文化，真是不懂我們中國抓寶可夢的藝術。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#寶可夢</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">你想去南京買一頭大象，放在三十三轉的蘇聯製電唱機上，看著牠在唱片上跳舞。只是你忘記南京早已沒有生產大象的工廠，現在他們只回收墜落的人造衛星，還有燃燒的長頸鹿。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#蘇聯</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#超現實主義</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">你在月亮的廳堂上，點上一盞燈的黑夜，任由它流出，星星的淚光。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#淚</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#月亮</a><br>
+	</td>
+  </tr>
+
+
+
+
+
+  <tr>
+    <td data-th="信息">你撿到一把槍，於是你對陌生人開槍，流血倒地的陌生人說：『你為什麼要打我！』你回答：『對不起，我一開始只想打中你的心。』</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#槍</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">你終於在這個失去夢想的國家發明了時光機器，但當你想使用它的時候，你卻發現這個國家的歷史從來沒有美好的時代，更沒有未來。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#時光機</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#OO之國</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">每一天，我都默默地跟過去的夢境告別，但我總是害怕說的太大聲，把夢境給吵醒，讓它們對我告別。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#夢</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">偶爾你會用搜尋引擎搜尋自己的名字，然後你會發現你那些跟你同名同姓的人們都過的比你好。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#搜尋引擎</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">宋朝人終於用太極圖創造了最古老的程式語言了，然後他們把程式和詞典編入了江南的紡織機，為他們寫不出來的宋詞煉字。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#程式</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">在這個文學都變成禁書被焚燒的時代，孩子拿著魯迅和艾倫金斯堡的書，代替生產過剩的色情影片。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#書</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#色情</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">一百年後，我們與月球人的戰爭，不再有騎著量子海馬的騎士與月球蝸牛，不再有太空鯨魚的歌聲歌頌騎著炮彈的少年。拓荒者已經離去，如今只有蓋在月球暗面的工廠，開採氦三的機器人，來往行星的運輸船。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#月亮</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">你不小心弄掉了家裡鑰匙，於是在一整座城市裡到處尋找它，直到你找到要回家的時候，才發現家裡的大門，從來沒有上鎖過。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#家</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#城市</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">有沒有可能這個世界上所有的神，全都是無神論者。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#神</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#無神論</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">當你沒有好的靈感的時候，你就開始在作品中寫著都市好冷漠，人們好寂寞。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#城市</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">不要想那麼多，IE瀏覽器當初也問你可不可以做你預設的瀏覽器，你不也拒絕了嗎？</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+  </tr>
+
+
+
+ <tr>
+    <td data-th="信息">因為沒有朋友，所以你辦了五百多個分身加自己帳號。為了證明他們存在，你努力扮演這五百個分身，假裝他們有性格，用力對他們說話，直到有天你發現，他們決定一起封鎖你。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#好友</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">「你們為什麼拿武器啊。」「因為我們要去討伐那些跟我們說著相反言論的人啊！」「那些人說了什麼啊？」「他們說，他們愛狗狗不愛貓貓、支持同婚、主張愛地球要環保，還說要廢除死刑啊！」「可──這世上難道沒有其他更邪惡的人可以討伐嗎？」「那些人太邪惡了，我們討伐不了啊。」</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#言論</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">你用買票機器人買了一千張自己在Livehouse演唱會的票，於是演唱會當天出現了一千零一個自己。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#機器人</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">總有一天，你不再等待星星墜落，還是鮮花開放，你的城市有著月亮，一千艘的飛船繞著它飛翔，而漁人們行走在月色中，在如北冥魚泅泳般的黑夜，打撈著零碎的星火，為那開在荒原上的花朵點光。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#星星</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#月亮</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#城市</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">有人對妳說，他對妳的愛就像電影那般精彩，他的意思其實是，他對妳的愛只有兩小時的演出時間。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#電影</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">我們，全都是我們所追求夢想的劣質翻譯。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#夢想</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#翻譯</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">在月球上放著一把二手的吉他，待價出售，我買下你那廉價的夢想，而你卻告訴我真空裡彈不出任何的聲音，是的，我買下這把吉他，只是試圖告訴別人，我嘗試過在真空中發聲而已。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#月亮</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">海龜咬走了我的手指，於是我追著牠跑，要牠把手指還來，但我跟牠分別的速度太快，以至於我再也無法指著任何一顆星星。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#手指</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#星星</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">高喬人來了以後，他們在城市裡種滿了玉米還有甜美的馬鈴薯，帶來烏拉圭草原的風，騎著拉的長長的影子，像是宇宙的投影術，而他們的地圖上的城尚未有過名字，甚至他們也忘記他們印地安祖母的族裔的血脈，孑然一身，直接離去。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#烏拉圭</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#地圖</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">pip install dream<br>
+Imoport dream<br>
+Python Dream.py<br>
+Error『你根本沒有夢想』<br>
+Cls</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#程式</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#夢想</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">一隻蝴蝶悄悄地飛過東石港的碼頭，蝶翼上寫著閩南話和日語的詩句，只是那樓台用蜘蛛網為窗戶刺青的少女，被異人的歌聲悄悄地把視線帶入了風裡。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#日治時代</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">你在早上八點五十分走入電梯，看到十二樓的女客服因為立中柱流汗弄花了臉還在補妝，你走出電梯，茶水間在你經過時停下了他們的閒話，走到辦公室，才想起了自己忘了打卡，走回來，已經是九點零二分，要扣日薪的4%，你嘆口氣，倒杯咖啡，看著窗外，哎呀！老闆掉下去啦。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#職業</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">『你可以幫我一個忙嗎。』『好啊！』『可以請你幫我做個實驗封鎖我好嗎！』『沒有問題。』於是他做了，但你忘記告訴他封鎖的時限，從今天開始你永遠失去一個好友。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#好友</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">電話打了過來，於是你接了起來。對方說：『您好，請問需要申辦汽車貸款嗎？』你毫不猶豫的說：『喔！好啊！我需要。』於是對方沉默了，被拒絕了太多次，就無法適應接受了。</td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#貸款</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">DEL /F /Q \\myself<br>
+RD /S /Q \\myself<br>
+如此安靜。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#程式</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">如果地球上沒有了貓咪，人類就會繼續跟人類談戀愛嗎？<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#貓</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">圖書館發生了戰爭，於是你拿起了最厚的那本『資本論』反擊，這就是紙本書能戰勝電子書的理由。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#圖書館</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">如果整座城市顛倒了過來，那麼人們的眼淚會變成下在天上的雨水嗎?<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#城市</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#淚</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#雨</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">/*你說我說話很容易把人家句點，其實我並不這麼認為，我說話比較像是註解，把別人說的每一行話都給註解掉了。*/<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#程式</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">試圖努力用漢文翻譯妳用契丹文寫的小說，但我們的語言早已經變成了女真話，南宋卻離我們太遙遠。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#翻譯</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">有錢人才有所謂的自由，沒有錢的自由一般被翻譯成自殺。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#自由</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">那個讚美妳像草莓一樣甜美的話語，其實是在說妳的黑頭粉刺。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#草莓</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">其實這個世界有很多種人，有不會唸書的，有不會運動的，有不善於交際的，有不善於工作的，也有不懂處世的，不懂得掙錢的。但你並不要因為自己擁有其中一種特點而失落，每個人其實都有自己獨特的地方，就像是我，擁有上述全部的特點。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#尼特族</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">妳分手後的那個星期，妳每天拚命的大吃大喝，彷彿那麼做可以忘掉很多事情。後來妳久違的站上了體重機，妳沒胖，反而還瘦了很多。也許，那是因為妳把心的重量從體重裡摘去的緣故吧。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">你開了一間圖書館，裡面的書專門紀錄收藏你說過的幹話，一個星期後，你開始用火箭把書送到外太空。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#宇宙</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#圖書館</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">『我要學鄭傑！』內心如此吶喊的你，手持雙刀衝進捷運站。就在這時候你遇到拿武士刀的少女，她問：『你也是要做大事的？』你說：『是啊。』於是你們就交往了，沒有任何人受傷。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#捷運</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">你製造了一台機器人，把自己所有的夢想和性格都輸入到它的身上，期望它能為你繼續完成夢想。但是當你啟動它的那天，它卻開始跑去繼續製造下一台機器人，你問它為什麼不去實現夢想，它回答要是哪一天自己壞掉了話，那夢想不就永遠沒機會實現了嗎！<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#機器人</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#夢想</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">你看見你曾經牽過手的她，在跟著別人牽手，這是你第一次想把自己設定為『回到原廠設定』。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#手機</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">一個駭客無法駭入自己的心，他只能不斷地加密他自己。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#駭客</a><br>
+	</td>
+  </tr>
+
+
+
+
+
+ <tr>
+    <td data-th="信息">你問了畢昇，為什麼活字印刷的字塊是左右相反的，他回答就像每個人都需要鏡子才能反射出真正的自己。但你又問，為什麼畢昇這名字左右看來都是正的，他回答因為我必須是面鏡子，同時反射文字也反射所有的人。後來人們用畢昇的字印了很多東西，人們都在文字裡看到自己。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#印刷術</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">萬曆年間，我回老家澳門的時候順道買了本「西遊記」的刻本，要帶去西班牙給那裏的人翻譯，有人問我為什麼明朝的四大名著卻只帶了這本，我回答因為四大名著就只有這一本有個好的結局。然而，後來往西行的船遲遲沒有開出去，我也就一直留在澳門這了。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#西遊記</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#中國</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#翻譯</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">大清帝國建造了一艘金色的潛水艇，然後他們從江南那買了一千隻金魚放在艇中的水族箱裡，那艇上的官員說，噓！安靜，別把牠們給吵醒，你有無聽見，這些是龍在沈睡的呼吸！於是這艘金碧輝煌的艇再也沒人說過話，也從來沒有聲納抓住過他們的聲音，兩次海戰後，他們消失在福建的海底。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#科幻</a><br>
+	</td>
+  </tr>
+
+ <tr>
+    <td data-th="信息">
+你的前任對你說，他想要永遠地住進你的回憶裡。而你回答--<br>
+echo off<br>
+taskkill /F /IM explorer.exe<br>
+explorer.exe<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#程式</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#愛情</a><br>
+	</td>
+  </tr>
+
+
+ <tr>
+    <td data-th="信息">
+不想長大的毛毛蟲，唯一飛向天空的方法，是讓自己被野鳥所攫去。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#成長</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">
+那一台不再開動的地鐵，在早已關閉的車站內熟睡。而你卻從車上醒來，看見了整座城市的移民，像靈魂般在虛空裡遊走。而你望著靜止的站牌，盼著那些人停留在這，懷著對旅行的期待。你是那台地鐵，只能在夢境承載無數移民遊走在彼岸的荒涼。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#夢</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#地鐵</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">
+在網路的時代裡，我們甚至沒有可以好好讀完一首詩的時間。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#網路</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">
+看看我們偉大的大清帝國，那黃龍旗是美國的織布機織的，那鐵甲艦是英國製造的，宣禮的槍炮是德國進的，還有那點燃的煙火是東洋來的。你問有沒有什麼真的是自家的，我回答織布是嫘祖先的，冶鐵干將莫邪冶過了，明朝我們就有先進的火器了，火藥則是道士發明的，這不就都是咱們嗎！<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#清朝</a><br>
+	</td>
+  </tr>
+
+  <tr>
+    <td data-th="信息">
+你裝了一顆炸彈在自己的身上，好讓別人在遇見你的時候就開始逃亡。而你卻又期待這個世界有一個人，能為你拆下計時器，看見真正不是炸彈的你的模樣，只是當你選擇當初的安裝的時候，人們就不再期待什麼真實的你，而是爆破後散落的火花。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#炸彈</a><br>
+	</td>
+  </tr>
+
+
+
+  <tr>
+    <td data-th="信息">你說當我迷路的時候，就瞇上眼去尋找那隻藍色的鹿，在牠的角上長著路由，牽引著你我的電波漫遊。但是你的信號卻已在時間裡墜落，我能找到的你被上了鎖，能找到的只有孤獨，還有那隻終於慢慢看不見的鹿。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#鹿</a><br>
+	<a class="btn" onclick="btn(this.innerHTML)">#網路</a><br>
+	</td>
+  </tr>
+
+
+  <tr>
+    <td data-th="信息">你為自己的掃地機器人重新編寫了程式碼，寄望著它可以為你清掉更多垃圾。於是那台掃地機器人從這天開始不停地追著你奔跑。<br></td>
+	<td data-th="Tag">
+	<a class="btn" onclick="btn(this.innerHTML)">#機器人</a><br>
+	</td>
+  </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</table>
+<!--這裡是表格-->
+</div>
+
+
+
+
+
+
+<!--以下-->
+<script  type="text/javascript" src='./js/default.js'></script>
+<script  type="text/javascript">
+
+//這邊開始是搜尋器
+
+
+
+//TAG搜尋器
+function TagSearch(){
+//宣告一些名字很煞氣的變數名， input=輸入   filter=過濾   table=表格    tr=列<tr>  td=欄<td>	txtValue=表格的文字
+ var  table, tr, td, i, txtValue;
+ var T1 = document.getElementById("TagInput1");		//取得input id的輸入框
+ var T2 = document.getElementById("TagInput2");		//取得input id的輸入框
+ var T3 = document.getElementById("TagInput3");		//取得input id的輸入框
+ 
+
+ table = document.getElementById("mytable");	//取得這個table
+ tr = table.getElementsByTagName("tr");			//取得所有tr
+
+	 for (i = 0; i < tr.length; i++) {
+		td = tr[i].getElementsByTagName("td")[1];	//獲取所有表格td[????]之文本
+
+		if (td) {
+		  txtValue = td.textContent || td.innerText;
+
+		  if((txtValue.indexOf(T1.value) > -1)  && (txtValue.indexOf(T2.value) > -1)  && (txtValue.indexOf(T3.value) > -1)) {	//滿足三種TAG條件的搜尋值 +
+				tr[i].style.display = "";		//打開該列
+		  }else {
+			tr[i].style.display = "none";	//隱藏該列
+		}
+	  }
+	}
+}
+//TAG搜尋器
+
+
+//名稱搜尋器
+//可以轉換成建構函數  input = document.getElementById("???")=尋找的INPUT的ID ;   td[????]=查找行  
+
+function TextSearch(){
+//宣告一些名字很煞氣的變數名， input=輸入     table=表格    tr=列<tr>  td=欄<td>	txtValue=表格的文字
+ var input, table, tr, td, i, txtValue;
+ input = document.getElementById("NameInput");				//取得input id的輸入框
+
+ table = document.getElementById("mytable");	//取得這個table
+ tr = table.getElementsByTagName("tr");			//取得所有tr
+
+ for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];	//獲取所有表格td[????]之文本
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.indexOf(input.value) > -1) {
+        tr[i].style.display = "";		//打開該列
+      } else {
+        tr[i].style.display = "none";	//隱藏該列
+    }
+   }
+  }
+}
+//名稱搜尋器
+</script>
+ </body> 
+</html>

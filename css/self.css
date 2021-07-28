@@ -1,0 +1,19 @@
+.pic{
+	overflow:hidden;	/*overflow:hidden是為了隱藏在圖片放大時超出的部分*/
+}
+
+.pic img{
+	transform:scale(1,1);
+	transition: all 0.5s ease-out;	/*transition可以做出圖片緩慢放大的效果，all 0.5s ease 0s為圖片放大所需的時間和特效*/
+}
+
+.pic img:hover{
+	transform:scale(1.12,1.12);/*transform:scale(1.2,1.2)是圖片放大的倍率*/
+	-webkit-filter:opacity(.8);
+	/*-webkit-filter:drop-shadow(5px 5px 5px #333);*/
+	-webkit-filter:saturate(0.5);
+	-webkit-filter:blur(3px);
+	/*-webkit-filter:grayscale(1);*/
+	-webkit-filter:sepia(1);
+	/*-webkit-filter:contrast(2);*/
+}

@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en" class="no-js demo-5">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>MyBook</title>
+		<meta name="description" content="Bookblock: A Content Flip Plugin - Demo 5" />
+		<meta name="keywords" content="javascript, jquery, plugin, css3, flip, page, 3d, booklet, book, perspective" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+		<!-- custom demo style -->
+		<link rel="stylesheet" type="text/css" href="css/demo5.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<!-- 自寫的 -->
+		<link rel="stylesheet" type="text/css" href="css/self.css" />
+		<!--Bootstrap-->
+		<!--<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">-->
+	   <!--<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">-->
+	   <!--<link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.css">
+	   <link rel="stylesheet" type="text/css" href="./css/bootstrap-grid.min.css">
+	   <link rel="stylesheet" type="text/css" href="./css/bootstrap-reboot.css">
+	   <link rel="stylesheet" type="text/css" href="./css/bootstrap-reboot.min.css">-->
+	   <!--<script type="text/javascript" src="./js/bootstrap.bundle.js"></script>
+	   <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+	   <script type="text/javascript" src="./js/bootstrap.js"></script>
+	   <script type="text/javascript" src="./js/bootstrap.min.js"></script>	-->
+	</head>
+	<style>
+#block 
+{
+	height: 250px;
+	width: 250px;
+	background-color:#FFF;
+
+			 
+	position: fixed;     /*絕對位置*/
+	float: left;
+	top: 35%;               /*從上面開始算，下推 50% (一半) 的位置*/
+	left: 10%;              /*從左邊開始算，右推 50% (一半) 的位置*/
+
+	/*margin-top: -100px;     /*高度的一半*/
+	/*margin-left: -200px;    /*寬度的一半*/
+         
+}
+
+body{
+    background:#fff2e3;
+    animation-name:color_change;
+    animation-duration:4s;
+}
+@keyframes color_change{
+      0%{
+          background:#ffffff;
+      }
+      100%{
+          background:#fff2e3;
+      }
+  }
+  </style>
+	<body>
+
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+				<a class="codrops-icon codrops-icon-prev" href="index.html"><span>index</span></a>
+				<!--<a href="http://dribbble.com/isaac317">Images by Isaac Montemayor</a>-->
+				<!--<span class="right"><a class="codrops-icon codrops-icon-drop" href="http://tympanus.net/codrops/2012/09/03/bookblock-a-content-flip-plugin/"><span>Back to the Codrops Article</span></a></span>-->
+			</div>
+			<header>
+				<h1>MyBook <span>A book,about myself</span></h1>	
+				<nav class="codrops-demos">
+					<a href="poem.html">poem</a>
+
+
+
+				</nav>
+			</header>
+
+<!--
+			<div class="main clearfix">
+			<div id="block" >
+			XXXXX
+			</div>-->
+
+
+				<ul class="bb-custom-grid" id="bb-custom-grid">
+
+					<li>
+						<h3>Game Background</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="game_bg.html"><img src="images/index/nvl.png" width="300" height="225" border="0" alt=""></a></div>
+						</div>
+						<nav>
+						</nav>
+					</li>
+					<li>
+						<h3>Pixel Art</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="pixel.html"><img src="images/index/pixel.png" width="300" height="225" border="0" alt=""></a></div>
+
+						</div>
+						<nav>
+
+						</nav>
+					</li>
+
+
+					<!--<li>
+						<h3>film</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="*"><img src="images/index/ae.png" width="300" height="225" border="0" alt=""></a></div>
+
+						</div>
+						<nav>
+
+						</nav>
+					</li>-->
+
+
+					<li>
+						<h3>Illustrator</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="ai.html"><img src="images/index/ai.png" width="300" height="225" border="0" alt=""></a></div>
+
+						</div>
+						<nav>
+
+						</nav>
+					</li>
+
+
+
+
+
+					<!--<li>
+						<h3>other</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="http://dribbble.com/shots/327171-Around-the-Office-Signage-7"><img src="images/index/oth.png" width="300" height="225" border="0" alt=""></a></div>
+						</div>
+						<nav>
+						</nav>
+					</li>
+
+					<li>
+						<h3>photoshop</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="http://dribbble.com/shots/327171-Around-the-Office-Signage-7"><img src="images/index/ps.png" width="300" height="225" border="0" alt=""></a></div>
+						</div>
+						<nav>
+						</nav>
+					</li>-->
+
+					<li>
+						<h3>web design</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="web.html"><img src="images/index/web.png" width="300" height="225" border="0" alt=""></a></div>
+						</div>
+						<nav>
+						</nav>
+					</li>
+
+
+					<li>
+						<h3>book & pdf</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="images/book1/book1.pdf"><img src="images/index/book1.png" width="300" height="225" border="0" alt=""></a></div>
+						</div>
+						<nav>
+
+						</nav>
+					</li>
+					<li>
+						<h3>book & pdf2</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="images/book2/book2.pdf"><img src="images/index/book2.png" width="300" height="225" border="0" alt=""></a></div>
+						</div>
+						<nav>
+						</nav>
+					</li>
+
+					<li>
+						<h3>book & pdf3</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="images/book3/book3.pdf"><img src="images/index/book3.png" width="300" height="225" border="0" alt=""></a></div>
+						</div>
+						<nav>
+						</nav>
+					</li>
+
+					<li>
+						<h3>otehr</h3>
+						<div class="bb-bookblock">
+							<div class="bb-item pic"><a href="other.html"><img src="images/index/oth.png" width="300" height="225" border="0" alt=""></a></div>
+						</div>
+						<nav>
+						</nav>
+					</li>
+
+
+
+
+
+
+
+
+
+				</ul>
+			</div>
+		</div><!-- /container -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script type="text/javascript">
+			var Page = (function() {
+
+				var $grid = $( '#bb-custom-grid' );
+
+				return {
+					init : function() {
+						$grid.find( 'div.bb-bookblock' ).each( function( i ) {
+							
+							var $bookBlock = $( this ),
+								$nav = $bookBlock.next().children( 'span' ),
+								bb = $bookBlock.bookblock( {
+									speed : 600,
+									shadows : false
+								} );
+								
+							// add navigation events
+							$nav.each( function( i ) {
+								$( this ).on( 'click touchstart', function( event ) {
+									var $dot = $( this );
+									$nav.removeClass( 'bb-current' );
+									$dot.addClass( 'bb-current' );
+									$bookBlock.bookblock( 'jump', i + 1 );
+									return false;
+								} );
+							} );
+							
+							// add swipe events
+							$bookBlock.children().on( {
+								'swipeleft' : function( event ) {
+									$bookBlock.bookblock( 'next' );
+									return false;
+								},
+								'swiperight' : function( event ) {
+									$bookBlock.bookblock( 'prev' );
+									return false;
+								}
+
+							} );
+							
+						} );
+					}
+				};
+
+			})();
+		</script>
+		<script>
+				Page.init();
+		</script>
+
+	</body>
+</html>
